@@ -17,7 +17,7 @@
     display: block;
     width: 138px;
     height: 30px;
-    background-image: url(/img/LOGO.png);
+    background-image: url(../img/LOGO.png);
     background-size: cover;
     text-indent: 101%;
     overflow: hidden;
@@ -31,7 +31,7 @@
 /* 廣告區 */
 .banner{
     height: calc(100vh - 60px);
-    background-image: url(/img/phone.png);
+    background-image: url(../img/phone.png);
     background-position: bottom 0px right -100px;;
     background-repeat: no-repeat;
     background-size:cover;
