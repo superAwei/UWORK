@@ -1,0 +1,247 @@
+// 整體樣式
+$font-info:18px;
+$uwork_blue:#3967ec;
+$uwork_white:#f5f5f7;
+$uwork_hover:#3967ec;
+$uwork_black:#000;
+/* 表頭 */
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px 50px;
+	background-color:$uwork_black;
+	.nav {
+		display: flex;
+		justify-content: space-between;
+		
+		li a{
+            display: block;
+            font-size: 14px;
+            color:$uwork_white;
+            text-decoration: none;
+            padding: 10px 30px;
+            border-radius: 50px;
+            &:hover{
+                background-color: $uwork_hover;
+            }
+		}
+	}
+	h1 {
+		a {
+			display: block;
+			width: 138px;
+			height: 30px;
+			background-image: url(../img/LOGO.png);
+			background-size: cover;
+			text-indent: 101%;
+			overflow: hidden;
+		}
+	}
+}
+/* 廣告區 */
+.banner {
+	height: calc(100vh - 60px);
+	background-image: url(../img/phone.png);
+	background-position: bottom 0px right -100px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	.slogan {
+        padding: 200px 50px;
+            h2 {
+                font-size: 52px;
+                margin-bottom: 30px;
+                font-family: 'Roboto', sans-serif,'Noto Sans TC', sans-serif;
+            }
+            p {
+                font-size: $font-info;
+                line-height: 1.6;
+            }
+            .calc_btn{
+                text-decoration: none;
+                display: block;
+                width: 200px;
+                height: 60px;
+                background-color:$uwork_blue;
+                color:$uwork_white;
+                text-align: center;
+                line-height: 60px;
+                font-size: $font-info;
+                border-radius:50px ;
+            }
+	}
+}
+/* 計算機區塊 */
+
+.content {
+	height: 100vh;
+	background-color:$uwork_black;
+    text-align: center;
+    .calc_title {
+        color:$uwork_white;
+        padding: 50px;
+        h2 {
+            position: relative;
+            font-size: 56px;
+            font-family: 'Roboto', sans-serif,'Noto Sans TC', sans-serif;
+        }
+
+        span{
+            font-size: 18px;
+        }
+    }
+	.data_area {
+		display: flex;
+		justify-content: center;
+        color:$uwork_white;
+        .cost {
+            margin: 60px 20px;
+            text-align: center;
+            i {
+                display: block;
+                font-size: 50px;
+            }
+            .cost_num {
+                margin-top: 20px;
+                padding-bottom: 20px;
+                background-color: rgb(46, 46, 46);
+                border: 0px none;
+                border-radius: 20px;
+                &::placeholder {
+                    text-align: center;
+                }
+            }
+        }
+	}
+	
+	.btn {
+		display: inline-block;
+		text-decoration: none;
+		color: $uwork_white;
+		padding: 20px 100px;
+		margin: 0 10px;
+		border-radius: 50px;
+		background-color:$uwork_blue;
+		font-size: $font-info;
+		font-family: 'Roboto', sans-serif,'Noto Sans TC', sans-serif;
+    }
+    
+    .save{
+        background-color:$uwork_white;
+        color:$uwork_black;
+    }
+	.workhour {
+		margin-top: 40px;
+		font-size: 200px;
+		color:$uwork_white;
+	}
+	span {
+		color: #f5f7f5;
+		font-size: 50px;
+	}
+}
+/* 介紹好處區塊 */
+.adv {
+	height: 100vh;
+	background-color:$uwork_black;
+	.adv_title {
+		text-align: center;
+		padding: 50px;
+		color:$uwork_white;
+		h2 {
+			font-size: 56px;
+			font-family: 'Roboto', sans-serif,'Noto Sans TC', sans-serif;
+		}
+		p {
+			font-size: $font-info;
+			padding-top: 10px;
+			font-family: 'Roboto', sans-serif,'Noto Sans TC', sans-serif;
+		}
+	}
+}
+.adv_item {
+	display: flex;
+	justify-content: space-evenly;
+	text-align: center;
+	.item {
+		position: relative;
+	}
+	.icon {
+		margin-top: 50px;
+	}
+	.fas {
+		font-size: 120px;
+		color:$uwork_blue;
+		position: relative;
+		z-index: 2;
+	}
+	h3 {
+		font-size: 20px;
+		font-weight: 800;
+		margin-top: 50px;
+		color:$uwork_white;
+		font-family: 'Roboto', sans-serif,'Noto Sans TC', sans-serif;
+	}
+	p {
+		font-size: $font-info;
+		margin-top: 20px;
+		color: $uwork_white;
+		font-family: 'Roboto', sans-serif,'Noto Sans TC', sans-serif;
+	}
+	.bg_text {
+		display: block;
+		font-size: 360px;
+		font-weight: 900;
+		opacity: 0.15;
+		position: absolute;
+		top: -30px;
+		left: -40px;
+		z-index: 0;
+		color:$uwork_white;
+	}
+}
+/* 加入區塊 */
+.join {
+    .join_title {
+        text-align: center;
+        padding: 50px;
+        h2 {
+            font-size: 56px;
+            font-family: 'Roboto', sans-serif,'Noto Sans TC', sans-serif;
+        }
+        p {
+            font-size: $font-info;
+            margin-top: 10px;
+        }
+    }
+	.info {
+        display: flex;
+        .discount {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 60px 0px;
+            width: 60%;
+            background-color: $uwork_black;
+            color: $uwork_white;
+            h3{
+                font-size: $font-info;
+            }
+            .awei {
+                font-size: 60px;
+                padding: 20px 0px;
+            }
+        }
+        
+        .uber {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40%;
+            line-height: 100%;
+            background-color:$uwork_blue;
+            color:$uwork_white;
+            font-size: $font-info;
+        }
+	}
+}

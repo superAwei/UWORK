@@ -1,0 +1,237 @@
+@charset "UTF-8";
+/* 表頭 */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background-color: #000;
+}
+.header .nav {
+  display: flex;
+  justify-content: space-between;
+}
+.header .nav li a {
+  display: block;
+  font-size: 14px;
+  color: #f5f5f7;
+  text-decoration: none;
+  padding: 10px 30px;
+  border-radius: 50px;
+}
+.header .nav li a:hover {
+  background-color: #3967ec;
+}
+.header h1 a {
+  display: block;
+  width: 138px;
+  height: 30px;
+  background-image: url(../img/LOGO.png);
+  background-size: cover;
+  text-indent: 101%;
+  overflow: hidden;
+}
+
+/* 廣告區 */
+.banner {
+  height: calc(100vh - 60px);
+  background-image: url(../img/phone.png);
+  background-position: bottom 0px right -100px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.banner .slogan {
+  padding: 200px 50px;
+}
+.banner .slogan h2 {
+  font-size: 52px;
+  margin-bottom: 30px;
+  font-family: "Roboto", sans-serif, "Noto Sans TC", sans-serif;
+}
+.banner .slogan p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+.banner .slogan .calc_btn {
+  text-decoration: none;
+  display: block;
+  width: 200px;
+  height: 60px;
+  background-color: #3967ec;
+  color: #f5f5f7;
+  text-align: center;
+  line-height: 60px;
+  font-size: 18px;
+  border-radius: 50px;
+}
+
+/* 計算機區塊 */
+.content {
+  height: 100vh;
+  background-color: #000;
+  text-align: center;
+}
+.content .calc_title {
+  color: #f5f5f7;
+  padding: 50px;
+}
+.content .calc_title h2 {
+  position: relative;
+  font-size: 56px;
+  font-family: "Roboto", sans-serif, "Noto Sans TC", sans-serif;
+}
+.content .calc_title span {
+  font-size: 18px;
+}
+.content .data_area {
+  display: flex;
+  justify-content: center;
+  color: #f5f5f7;
+}
+.content .data_area .cost {
+  margin: 60px 20px;
+  text-align: center;
+}
+.content .data_area .cost i {
+  display: block;
+  font-size: 50px;
+}
+.content .data_area .cost .cost_num {
+  margin-top: 20px;
+  padding-bottom: 20px;
+  background-color: #2e2e2e;
+  border: 0px none;
+  border-radius: 20px;
+}
+.content .data_area .cost .cost_num::placeholder {
+  text-align: center;
+}
+.content .btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #f5f5f7;
+  padding: 20px 100px;
+  margin: 0 10px;
+  border-radius: 50px;
+  background-color: #3967ec;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif, "Noto Sans TC", sans-serif;
+}
+.content .save {
+  background-color: #f5f5f7;
+  color: #000;
+}
+.content .workhour {
+  margin-top: 40px;
+  font-size: 200px;
+  color: #f5f5f7;
+}
+.content span {
+  color: #f5f7f5;
+  font-size: 50px;
+}
+
+/* 介紹好處區塊 */
+.adv {
+  height: 100vh;
+  background-color: #000;
+}
+.adv .adv_title {
+  text-align: center;
+  padding: 50px;
+  color: #f5f5f7;
+}
+.adv .adv_title h2 {
+  font-size: 56px;
+  font-family: "Roboto", sans-serif, "Noto Sans TC", sans-serif;
+}
+.adv .adv_title p {
+  font-size: 18px;
+  padding-top: 10px;
+  font-family: "Roboto", sans-serif, "Noto Sans TC", sans-serif;
+}
+
+.adv_item {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.adv_item .item {
+  position: relative;
+}
+.adv_item .icon {
+  margin-top: 50px;
+}
+.adv_item .fas {
+  font-size: 120px;
+  color: #3967ec;
+  position: relative;
+  z-index: 2;
+}
+.adv_item h3 {
+  font-size: 20px;
+  font-weight: 800;
+  margin-top: 50px;
+  color: #f5f5f7;
+  font-family: "Roboto", sans-serif, "Noto Sans TC", sans-serif;
+}
+.adv_item p {
+  font-size: 18px;
+  margin-top: 20px;
+  color: #f5f5f7;
+  font-family: "Roboto", sans-serif, "Noto Sans TC", sans-serif;
+}
+.adv_item .bg_text {
+  display: block;
+  font-size: 360px;
+  font-weight: 900;
+  opacity: 0.15;
+  position: absolute;
+  top: -30px;
+  left: -40px;
+  z-index: 0;
+  color: #f5f5f7;
+}
+
+/* 加入區塊 */
+.join .join_title {
+  text-align: center;
+  padding: 50px;
+}
+.join .join_title h2 {
+  font-size: 56px;
+  font-family: "Roboto", sans-serif, "Noto Sans TC", sans-serif;
+}
+.join .join_title p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+.join .info {
+  display: flex;
+}
+.join .info .discount {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 0px;
+  width: 60%;
+  background-color: #000;
+  color: #f5f5f7;
+}
+.join .info .discount h3 {
+  font-size: 18px;
+}
+.join .info .discount .awei {
+  font-size: 60px;
+  padding: 20px 0px;
+}
+.join .info .uber {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  line-height: 100%;
+  background-color: #3967ec;
+  color: #f5f5f7;
+  font-size: 18px;
+}
