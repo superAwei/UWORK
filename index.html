@@ -30,86 +30,106 @@
             </div> 
         </div>
         <div class="content">
-            <div class="calc_title">
-                <h2>CALCULATION<br><span>需要跑多久計算機</span></h2>
-            </div>
-            <div class="data_area">
-                <div class="cost">
-                    <i class="fas fa-oil-can costicon"></i>
-                    <input type="text" placeholder="燃油費" class="cost_num">
+            <div class="content-inner container">
+                <div class="calc_title">
+                    <h2>CALCULATION<span>需要跑多久計算機</span></h2>
                 </div>
-                <div  class="cost">
-                    <i class="fas fa-hand-holding-usd"></i>
-                    <input type="text" placeholder="靠行費" class="cost_num">
+                <div class="calc_info">
+                    <p>
+                        請先輸入每個月預計要賺多少薪水以及根據你過往的經驗每小時平均營業收入為多少，下方分別為跑車成本依序為
+                        油錢、靠行費、保養、雜支（舉凡路邊停車費、可能的罰單等等請根據自身狀況自行抓個大概，最後為車輛的折舊！
+                        計算公式是用每月要賺的薪水加上所有的成本支出除上您每小時的平均營業收入計算出來，每月大約要上線的時數才能達到目標！
+                    </p>
                 </div>
-                <div  class="cost">
-                    <i class="fas fa-tools"></i>
-                    <input type="text" placeholder="保養費" class="cost_num">
+                <div class="salary_area">
+                    <i class="fas fa-coins costicon"></i>
+                    <input type="text" placeholder="期望薪資" class="salary_num" id="idsalary">
+                    <i class="far fa-clock costicon"></i>
+                    <input type="text" placeholder="平均時薪" class="hourly_num" id="idhourly">
                 </div>
-                <div  class="cost">
-                    <i class="fas fa-funnel-dollar"></i>
-                    <input type="text" placeholder="雜支費" class="cost_num">
+                <div class="data_area">
+                    <div class="cost">
+                        <i class="fas fa-oil-can costicon"></i>
+                        <input type="text" placeholder="燃油費" class="cost_num" id="idoil">
+                    </div>
+                    <div  class="cost">
+                        <i class="fas fa-hand-holding-usd"></i>
+                        <input type="text" placeholder="靠行費" class="cost_num" id="idfee">
+                    </div>
+                    <div  class="cost">
+                        <i class="fas fa-tools"></i>
+                        <input type="text" placeholder="保養費" class="cost_num" id="idservice">
+                    </div>
+                    <div  class="cost">
+                        <i class="fas fa-funnel-dollar"></i>
+                        <input type="text" placeholder="雜支費" class="cost_num" id="idother">
+                    </div>
+                    <div  class="cost">
+                        <i class="far fa-sad-tear"></i>
+                        <input type="text" placeholder="折舊" class="cost_num" id="iddepreciation">
+                    </div>
                 </div>
-                <div  class="cost">
-                    <i class="far fa-sad-tear"></i>
-                    <input type="text" placeholder="折舊" class="cost_num">
-                </div>
-            </div>
-            <a href="#" class="btn">計算</a>
-            <a href="#" class="btn save">紀錄</a>
-            <div class="workhour">300<span>/hr</span></div>
+                <a href="#" class="btn" id="idcalcstar">計算</a>
+                <a href="#" class="btn" id="idsave">紀錄</a>
+                <div id="workhour">300<span>/hr</span></div>
+                <ul id="list"></ul>   
+           </div>
         </div>
         <div class="adv">
-            <div class="adv_title">
-            <h2>ADVANTAGE</h2>
-                <p>加入有什麼好處</p>
-            </div>     
-            <ul class="adv_item">
-                <li class="item">
-                    <div class="icon">
-                        <i class="fas fa-history"></i>
-                        <span class="decoration"></span>
-                        <span class="bg_text">1</span>
-                    </div>
-                    <h3>工作時間充滿彈性</h3>
-                    <p>學院提到校園臺灣民校園臺灣民</p>
-                </li>
-                <li class="item">
-                    <div class="icon">
-                        <i class="fas fa-money-bill-wave"></i>
-                        <span class="bg_text">2</span>
-                    </div>
-                    <h3>快速取得款項</h3>
-                    <p>這禮拜賺錢，下週就領錢</p>
-                </li>
-                <li class="item">
-                    <div class="icon">
-                        <i class="fas fa-sms"></i>
-                        <span class="decoration"></span>
-                        <span class="bg_text">3</span>
-                    </div>
-                    <h3>隨時皆可獲得客服支援</h3>
-                    <p>如需任何協助，請隨時與服務中心聯絡。</p>
-                </li>
-            </ul>
+            <div class="adv-inner container">
+                <div class="adv_title">
+                    <h2>ADVANTAGE<span>加入有什麼好處</span></h2>
+                </div>     
+                <ul class="adv_item">
+                    <li class="item">
+                        <div class="icon">
+                            <i class="fas fa-history"></i>
+                            <span class="decoration"></span>
+                            <span class="bg_text">1</span>
+                        </div>
+                        <h3>工作時間充滿彈性</h3>
+                        <p>學院提到校園臺灣民校園臺灣民</p>
+                    </li>
+                    <li class="item">
+                        <div class="icon">
+                            <i class="fas fa-money-bill-wave"></i>
+                            <span class="bg_text">2</span>
+                        </div>
+                        <h3>快速取得款項</h3>
+                        <p>這禮拜賺錢，下週就領錢</p>
+                    </li>
+                    <li class="item">
+                        <div class="icon">
+                            <i class="fas fa-sms"></i>
+                            <span class="decoration"></span>
+                            <span class="bg_text">3</span>
+                        </div>
+                        <h3>隨時皆可獲得客服支援</h3>
+                        <p>如需任何協助，請隨時與服務中心聯絡。</p>
+                    </li>
+                </ul>
+           </div>
         </div>
         <div class="join">
-            <div class="join_title">
-                <h2>JOIN</h2>
-                <p>立刻加入開始賺取收入</p>
-            </div>
-            <div class="info">
-                <div class="discount">
-                    <h3>優惠代碼</h3>
-                    <p class="awei">AWEI</p>
-                    <p>使用此代碼註冊司機即可獲得相關優惠</p>
+                <div class="join_title">
+                    <h2>JOIN</h2>
+                    <p>立刻加入開始賺取收入</p>
                 </div>
-                <div class="uber">
-                    <p>深入了解上線開車和外送相關資訊</p>
+                <div class="info">
+                    <div class="discount">
+                        <h3>優惠代碼</h3>
+                        <p class="awei">AWEI</p>
+                        <p>使用此代碼註冊司機即可獲得相關優惠</p>
+                    </div>
+                    <div class="uber">
+                        <p>深入了解上線開車和外送相關資訊</p>
+                    </div>
                 </div>
-            </div>
         </div>
-        <div class="footer"></div>
     </div> 
+    <div class="footer"></div>
+    
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/countup.js/1.8.2/countUp.min.js'></script>
+    <script src="/js/uwork.js"></script>
 </body>
 </html>
