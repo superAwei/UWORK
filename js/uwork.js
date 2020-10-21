@@ -41,7 +41,8 @@ document.getElementById('idcalcstar').onclick = function(e){
    str = ''; //設定一個空字串
    var len = items.length; //抓資料的所有內容
    for(var i=0;i<len;i++){
-      str += '<li><a href="#" data-index='+i+'>刪除</a><span>'+items[i].content+'</span></li>'; //把 HTML 標籤組合起來
+      // str += '<li><a href="#" data-index='+i+'>刪除</a><span>'+items[i].content+'</span></li>'; //把 HTML 標籤組合起來
+      str += '<li><span>'+items[i].content+'</span><a href="#"  data-index='+i+'><i class="far fa-trash-alt"></i></a></li>'; //把 HTML 標籤組合起來
    }
    list.innerHTML = str; //把上面組合好的HTML， 放進 list 列表內
  }
