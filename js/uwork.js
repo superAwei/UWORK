@@ -75,3 +75,13 @@ document.getElementById('idcalcstar').onclick = function(e){
 }
 countup(); 
 }
+
+
+
+// RWD程式使用Jquery
+$(document).ready(function() {
+  $('.showmenu').on('click',  function(e){
+     e.preventDefault();
+     $('body').toggleClass('menu-show');
+ });
+});
